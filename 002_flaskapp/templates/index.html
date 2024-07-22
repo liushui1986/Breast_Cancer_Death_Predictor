@@ -6,15 +6,15 @@
   
   <form method="POST" action="/">
     Age:<br>
-    <input type="number" name="age" value=50>
-    <br><br>
-    Year of Operation:<br>
-    19<input type="number" name="year" value=60>
-    <br><br>
-    Number of Axillary Nodes:<br>
-    <input type="number" name="num_Axi" value=3>
-    <br><br>
-    <input type="submit" value="Submit">
+    	<input type="number" name="age" value="{{ age }}">
+    	<br><br>
+	Year of Operation:<br>
+	19<input type="number" name="year" value="{{ year }}">
+	<br><br>
+	Number of Axillary Nodes:<br>
+	<input type="number" name="num_Axi" value="{{ num_Axi }}">
+	<br><br>
+	<input type="submit" value="Submit">
   </form>
 
   {% if pred %}
